@@ -29,7 +29,7 @@ export class NewsService {
     const skip = (page - 1) * limit;
 
     const [data, total] = await this.newsRepository.findAndCount({
-      order: { createdAt: 'DESC' },
+      order: { id: 'DESC' },
       take: limit,
       skip,
     });

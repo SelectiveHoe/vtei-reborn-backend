@@ -29,7 +29,15 @@
 ## Project setup
 
 ```bash
+$ pnpm i
+```
+
+```bash
 $ docker-compose up --build
+```
+
+```bash
+$ pnpm migration:run
 ```
 
 ## Resources
