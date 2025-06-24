@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { NewsModule } from './news/news.module';
+import { PagesModule } from './pages/pages.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { NewsModule } from './news/news.module';
       }),
     }),
     NewsModule,
+    PagesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
