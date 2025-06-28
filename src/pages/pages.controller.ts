@@ -7,13 +7,11 @@ import {
   Param,
   Delete,
   UseGuards,
-  Query,
 } from '@nestjs/common';
 import { PagesService } from './pages.service';
 import { CreatePageDto } from './dto/create-page.dto';
 import { UpdatePageDto } from './dto/update-page.dto';
 import { PasswordAuthGuard } from '../auth/guards/password-auth.guard';
-import { PaginationDto } from './dto/pagination.dto';
 
 @Controller('pages')
 export class PagesController {
@@ -25,14 +23,9 @@ export class PagesController {
     return this.pagesService.create(createPageDto);
   }
 
-  @Get()
-  findAll(@Query() paginationDto: PaginationDto) {
-    return this.pagesService.findAll(paginationDto);
-  }
-
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.pagesService.findOne(+id);
+    return this.pagesService.getContentById(+id);
   }
 
   @Patch(':id')

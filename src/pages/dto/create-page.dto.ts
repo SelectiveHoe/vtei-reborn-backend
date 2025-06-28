@@ -1,7 +1,10 @@
-import { IsNotEmpty, IsObject } from 'class-validator';
+import { IsNotEmpty, IsNumber } from 'class-validator';
 
 export class CreatePageDto {
   @IsNotEmpty()
-  @IsObject()
+  @IsNumber()
+  id: number;
+
+  @IsNotEmpty()
   content: any;
 }

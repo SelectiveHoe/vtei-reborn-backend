@@ -1,10 +1,13 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  ConflictException,
+} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { PageEntity } from './entities/page.entity';
 import { CreatePageDto } from './dto/create-page.dto';
 import { UpdatePageDto } from './dto/update-page.dto';
-import { PaginationDto } from './dto/pagination.dto';
 
 @Injectable()
 export class PagesService {
@@ -14,33 +17,22 @@ export class PagesService {
   ) {}
 
   async create(createPageDto: CreatePageDto): Promise<PageEntity> {
-    const page = this.pageRepository.create(createPageDto);
-    return await this.pageRepository.save(page);
-  }
-
-  async findAll(paginationDto: PaginationDto = {}): Promise<{
-    data: PageEntity[];
-    total: number;
-    page: number;
-    limit: number;
-    totalPages: number;
-  }> {
-    const { page = 1, limit = 10 } = paginationDto;
-    const skip = (page - 1) * limit;
-
-    const [data, total] = await this.pageRepository.findAndCount({
-      order: { id: 'DESC' },
-      take: limit,
-      skip,
+    const existingPage = await this.pageRepository.findOne({
+      where: { id: createPageDto.id },
     });
 
-    return {
-      data,
-      total,
-      page,
-      limit,
-      totalPages: Math.ceil(total / limit),
-    };
+    if (existingPage) {
+      throw new ConflictException(
+        `Page with ID ${createPageDto.id} already exists`,
+      );
+    }
+
+    return await this.pageRepository.save(createPageDto);
+  }
+
+  async getContentById(id: number): Promise<PageEntity['content']> {
+    const page = await this.findOne(id);
+    return page.content;
   }
 
   async findOne(id: number): Promise<PageEntity> {

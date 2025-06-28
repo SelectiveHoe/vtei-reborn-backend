@@ -19,6 +19,8 @@ services:
     volumes:
       - ./:/app
       - /app/node_modules
+    # Override the default command to ensure development mode
+    command: npm run start:dev
 
   postgres:
     image: postgres:15

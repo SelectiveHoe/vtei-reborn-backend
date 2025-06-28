@@ -1,0 +1,168 @@
+[
+  {
+    "title": "Дільнична виборча комісія ВТЕІ",
+    "description": "Протоколи засідань дільничної виборчої комісії ВТЕІ ДТЕУ з проведення виборів ректора",
+    "id": "dilnychna-vyborcha-komisiya-vtei",
+    "slug": "dilnychna-vyborcha-komisiya-vtei", 
+    "locale": "ua",
+    "type": "richText",
+    "content": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": { "level": 2 },
+          "content": [
+            {
+              "type": "text",
+              "text": "Дільнична виборча комісія ВТЕІ"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "http://www.vtei.com.ua/doc/2022/vybory/prot1.pdf",
+                            "target": "_blank"
+                          }
+                        }
+                      ],
+                      "text": "Протокол №1 засідання дільничної виборчої комісії ВТЕІ ДТЕУ з проведення виборів ректора від 15 лютого 2022 року"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "http://www.vtei.com.ua/doc/2022/vybory/prot2.pdf",
+                            "target": "_blank"
+                          }
+                        }
+                      ],
+                      "text": "Протокол №2 засідання дільничної виборчої комісії ВТЕІ ДТЕУ з проведення виборів ректора від 15 квітня 2022 року"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "http://www.vtei.com.ua/doc/2022/vybory/prot3.pdf",
+                            "target": "_blank"
+                          }
+                        }
+                      ],
+                      "text": "Протокол №3 засідання дільничної виборчої комісії ВТЕІ ДТЕУ з проведення виборів ректора від 20 квітня 2022 року"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "http://www.vtei.com.ua/doc/2022/vybory/prot4.pdf",
+                            "target": "_blank"
+                          }
+                        }
+                      ],
+                      "text": "Протокол №4 засідання дільничної виборчої комісії ВТЕІ ДТЕУ з проведення виборів ректора від 27 квітня 2022 року"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "http://www.vtei.com.ua/doc/2022/vybory/prot5.pdf",
+                            "target": "_blank"
+                          }
+                        }
+                      ],
+                      "text": "Протокол №5 засідання дільничної виборчої комісії ВТЕІ ДТЕУ з проведення виборів ректора (підготовче засідання) від 28 квітня 2022 року"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "http://www.vtei.com.ua/doc/2022/vybory/prot6.pdf",
+                            "target": "_blank"
+                          }
+                        }
+                      ],
+                      "text": "Протокол №6 дільничної виборчої комісії ВТЕІ ДТЕУ з виборів ректора ДТЕУ від 28 квітня 2022 року"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
